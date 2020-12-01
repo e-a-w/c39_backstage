@@ -15,7 +15,7 @@ class Dashboard extends React.Component {
 
   render() {
     return (
-      <div className="w-full">
+      <div className="w-full" style={{fontSize: "1.5rem"}}>
         <div
           className="header-container bg-no-repeat bg-cover bg-center"
           style={{

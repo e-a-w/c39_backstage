@@ -1,7 +1,7 @@
 import React from 'react';
 import { useClipboard } from 'use-clipboard-hook';
 import swal from 'sweetalert';
-import clipboard from '../../../assets/clipboard.svg';
+import clipboard from '../../../assets/clipboard.png';
 import '../../../styles/index.css';
 
 const EventLink = ({ display, eventURL }) => {
@@ -34,7 +34,7 @@ const EventLink = ({ display, eventURL }) => {
               justifySelf: 'center',
             }}
           />
-          <img style={{cursor: "pointer"}} onClick={copy} src={clipboard} alt="clipboard"/>
+          <img style={{cursor: "pointer", height: '30px'}} onClick={copy} src={clipboard} alt="clipboard"/>
     </div>
   );
 };
