@@ -76,18 +76,14 @@ const CreateEvent = ({ handleClose, show }) => {
         <>
           <div
             className="justify-center items-center flex overflow-x-hidden overflow-y-scroll fixed inset-0 z-50 outline-none focus:outline-none"
-            style={{ position: 'fixed', right: '0', top: '20' }}
+            style={{ position: 'fixed', right: '30', top: '30' }}
           >
-            <div
-              className="relative w-auto my-6 mx-auto max-w-3xl"
-              // style={{ right: '0' }}
-            >
+            <div className="relative w-auto my-6 mx-auto max-w-3xl">
               <div
                 style={{
                   backgroundColor: 'white',
                   width: '700px',
                   padding: '30px 50px'
-                  // right: '0'
                 }}
                 className="border-0 rounded-lg shadow-lg relative flex flex-col outline-none focus:outline-none"
               >
