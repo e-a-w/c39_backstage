@@ -73,8 +73,8 @@ const CreateEvent = ({ handleClose, show }) => {
 {showModal ? (
         <>
           <div
-            className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
-            style={{padding: "50px"}}
+            className="justify-center items-center flex overflow-x-hidden overflow-y-scroll fixed inset-0 z-50 outline-none focus:outline-none"
+            style={{padding: "30px", right: "0"}}
           >
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               <div style={{backgroundColor: "white", width: "700px"}} className="border-0 rounded-lg shadow-lg relative flex flex-col outline-none focus:outline-none">
@@ -138,11 +138,11 @@ const CreateEvent = ({ handleClose, show }) => {
                       })}
                 </div>
                 {/*footer*/}
-                <div className="flex items-center justify-end p-6 border-t border-solid border-gray-300 rounded-b">
+                <div className="flex flex-col items-center justify-center p-6 border-t border-solid border-gray-300 rounded-b">
+                  <div>
                   <button
                     className="btn-2"
                     type="button"
-                    style={{ transition: "all .15s ease" }}
                     onClick={() => setShowModal(false)}
                   >
                     Close
@@ -150,10 +150,12 @@ const CreateEvent = ({ handleClose, show }) => {
                   <button onClick={handleGenerateEvent} type="button" className="btn-1">
                 Generate Event Link
               </button>
+              </div>
+
+              <EventLink display={showLinkClassName} eventURL={eventURL} />
 
                 </div>
 
-               <EventLink display={showLinkClassName} eventURL={eventURL} />
               </div>
             </div>
           </div>

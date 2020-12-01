@@ -30,27 +30,17 @@ class Dashboard extends React.Component {
           <CreateEvent show={this.state.show} />
         </div>
         <BrowserRouter>
-          <div className="bg-gray-dark w-full">
             <div
-              className="nav-div"
+              className="nav-div bg-gray-dark w-full"
               style={{
-                width: '100%',
+                width: '100vw',
                 display: 'flex',
-                justifyContent: 'center',
+                justifyContent: 'space-around',
                 position: 'relative',
                 color: '#fff7f1',
                 bottom: '4vh'
               }}
             >
-              <nav
-                className="flex"
-                style={{
-                  width: '100vw',
-                  height: '4rem',
-                  marginTop: '.5rem',
-                  justifyContent: 'space-evenly'
-                }}
-              >
                 <Link to="/dashboard/events" onClick={() => this.setState({ currentTab: 'events' })}
                     className={`h-full font-medium text-3xl hover:text-red text-center ${
                       this.state.currentTab === 'events' ? 'selected-tab' : ' '
@@ -63,9 +53,9 @@ class Dashboard extends React.Component {
                   >
                     My Events
                 </Link>
-                <Link to="/dashboard/stages" onClick={() => this.setState({ currentTab: 'events' })}
+                <Link to="/dashboard/stages" onClick={() => this.setState({ currentTab: 'stages' })}
                     className={`h-full font-medium text-3xl hover:text-red text-center ${
-                      this.state.currentTab === 'events' ? 'selected-tab' : ' '
+                      this.state.currentTab === 'stages' ? 'selected-tab' : ' '
                     }`}
                     style={{
                       margin: '0px',
@@ -88,7 +78,7 @@ class Dashboard extends React.Component {
                   >
                     My Equipment{' '}
                 </Link>
-              </nav>
+            
             </div>
 
             <Switch>
@@ -106,7 +96,6 @@ class Dashboard extends React.Component {
                 component={MyEquipment}
               />
             </Switch>
-          </div>
         </BrowserRouter>
       </div>
     );

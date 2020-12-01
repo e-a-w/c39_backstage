@@ -16,7 +16,7 @@ const EventLink = ({ display, eventURL }) => {
   });
 
   return (
-    <div className={showLinkClassName} className="flex">
+    <div className={showLinkClassName} className="flex w-full">
           <input
             readonly
             type="text"
@@ -27,8 +27,8 @@ const EventLink = ({ display, eventURL }) => {
             style={{
               backgroundColor: '#FFF7F1',
               textAlign: 'center',
-              width: '80%',
               height: "35px",
+              width: "100%",
               overflow: 'scroll',
               marginBottom: '1.5rem',
               justifySelf: 'center',
