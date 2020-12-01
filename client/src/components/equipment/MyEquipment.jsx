@@ -144,7 +144,8 @@ class MyEquipment extends React.Component {
               borderRight: '5px solid #FFF7F1',
               marginTop: '2.5rem',
               borderRadius: '10px',
-              padding: '1rem'
+              padding: '1rem',
+              color: 'white'
             }}
           >
             <h2 className="text-2xl semibold text-center text-white pb-6">
@@ -152,11 +153,10 @@ class MyEquipment extends React.Component {
             </h2>
             {this.state.existingEquip?.map((item) => {
               return (
-                <div className="flex justify-start ">
+                <div className="flex justify-center ">
                   <span
-                    className="w-3/4 border bg-white pl-2 text-black rounded-md semibold"
+                    className="w-3/4 flex border bg-white pl-2 text-black rounded-md semibold"
                     style={{
-                      display: 'inline-flex',
                       alignItems: 'center',
                       textAlign: 'left',
                       height: '3rem'
@@ -165,9 +165,8 @@ class MyEquipment extends React.Component {
                     {item.name}
                   </span>
                   <span
-                    className="w-1/4 border bg-white text-black rounded-md semibold"
+                    className="w-1/4 border flex bg-white text-black rounded-md semibold"
                     style={{
-                      display: 'inline-flex',
                       alignItems: 'center',
                       justifyContent: 'center'
                     }}
@@ -190,7 +189,8 @@ class MyEquipment extends React.Component {
                 borderRadius: '10px',
                 padding: '1rem',
                 minWidth: '38rem',
-                maxWidth: '38rem'
+                maxWidth: '38rem',
+                color: 'white'
               }}
             >
               <h1 className="text-2xl" style={{ marginBottom: '1.5rem' }}>

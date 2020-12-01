@@ -28,7 +28,7 @@ const EventLink = ({ display, eventURL }) => {
           backgroundColor: '#FFF7F1',
           textAlign: 'center',
           height: '35px',
-          width: '100%',
+          width: '90%',
           overflow: 'scroll',
           marginBottom: '1.5rem',
           justifySelf: 'center'

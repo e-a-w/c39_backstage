@@ -376,6 +376,9 @@ label:hover {
   border-bottom: 3px solid #a6271f !important;
 }
 
+.unselected-tab {
+  border-bottom: 3px solid white !important;
+}
 .my-equipment-component {
   @apply flex w-full;
 }

@@ -43,15 +43,13 @@ const MyStages = () => {
   return (
     <div className="flex flex-col items-center">
       <div className="dash-title-bar w-full flex justify-center">
-        <div className="dash-title-bar-buttons flex justify-center">
-          <button
-            className="btn-4 text-2xl"
-            style={{ height: '5rem', width: '15.5rem' }}
-            onClick={() => history.push('/dashboard/new-stage')}
-          >
-            Add A New Stage
-          </button>
-        </div>
+        <button
+          className="btn-4 text-2xl"
+          style={{ height: '5rem', width: '15.5rem', fontSize: '2rem' }}
+          onClick={() => history.push('/dashboard/new-stage')}
+        >
+          Add A New Stage
+        </button>
       </div>
       <div
         className="w-7/12"
@@ -70,7 +68,8 @@ const MyStages = () => {
                 borderBottomRightRadius: '0.5rem',
                 backgroundColor: '#FFF7F1',
                 marginBottom: '.4rem',
-                borderLeft: '8px solid #A6271F'
+                borderLeft: '8px solid #A6271F',
+                fontSize: '1.5rem'
               }}
             >
               <br />
