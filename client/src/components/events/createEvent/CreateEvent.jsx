@@ -80,14 +80,14 @@ const CreateEvent = ({ handleClose, show }) => {
           >
             <div
               className="relative w-auto my-6 mx-auto max-w-3xl"
-              style={{ right: '0' }}
+              // style={{ right: '0' }}
             >
               <div
                 style={{
                   backgroundColor: 'white',
                   width: '700px',
-                  padding: '30px 50px',
-                  right: '0'
+                  padding: '30px 50px'
+                  // right: '0'
                 }}
                 className="border-0 rounded-lg shadow-lg relative flex flex-col outline-none focus:outline-none"
               >
@@ -137,7 +137,7 @@ const CreateEvent = ({ handleClose, show }) => {
                         key={package1?._id}
                         className={
                           selectedPackage === package1?._id
-                            ? 'bg-blue-100 individual-package-container shadow-md mb-4 hover:shadow-lg flex justify-center items-center'
+                            ? 'bg-blue-100 individual-package-container shadow-md mb-4 hover:shadow-lg flex justify-center items-center selected-pkg'
                             : 'individual-package-container shadow-md mb-4 hover:shadow-lg flex justify-center items-center'
                         }
                         onClick={() => handleSelectPackage(package1?._id)}

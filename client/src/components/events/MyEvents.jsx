@@ -31,7 +31,7 @@ const MyEvents = () => {
         return (
           <div className="flex flex-col items-center w-full">
             <div
-              className="flex p-2 m-4 w-7/12 justify-center my-event-card"
+              className="flex p-2 m-4 w-full justify-center my-event-card"
               style={{
                 borderTopRightRadius: '0.5rem',
                 borderBottomRightRadius: '0.5rem',

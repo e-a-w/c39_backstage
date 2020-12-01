@@ -45,7 +45,12 @@ const MyStages = () => {
       <div className="dash-title-bar w-full flex justify-center">
         <button
           className="btn-4 text-2xl"
-          style={{ height: '5rem', width: '15.5rem', fontSize: '2rem' }}
+          style={{
+            height: '5rem',
+            width: '15.5rem',
+            fontSize: '1.2rem',
+            justifySelf: 'center'
+          }}
           onClick={() => history.push('/dashboard/new-stage')}
         >
           Add A New Stage
@@ -69,7 +74,9 @@ const MyStages = () => {
                 backgroundColor: '#FFF7F1',
                 marginBottom: '.4rem',
                 borderLeft: '8px solid #A6271F',
-                fontSize: '1.5rem'
+                fontSize: '1rem',
+                minWidth: '700px',
+                padding: '10px'
               }}
             >
               <br />

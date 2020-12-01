@@ -16,7 +16,7 @@ const EventLink = ({ display, eventURL }) => {
   });
 
   return (
-    <div className={showLinkClassName} className="flex w-full">
+    <div className={showLinkClassName} className="flex w-full justify-center">
       <input
         readonly
         type="text"
@@ -28,14 +28,14 @@ const EventLink = ({ display, eventURL }) => {
           backgroundColor: '#FFF7F1',
           textAlign: 'center',
           height: '35px',
-          width: '90%',
+          width: '80%',
           overflow: 'scroll',
           marginBottom: '1.5rem',
           justifySelf: 'center'
         }}
       />
       <img
-        style={{ cursor: 'pointer', height: '30px' }}
+        style={{ cursor: 'pointer', height: '30px', display: 'inline-flex' }}
         onClick={copy}
         src={clipboard}
         alt="clipboard"

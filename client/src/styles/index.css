@@ -372,6 +372,10 @@ label:hover {
   background-color: #b9544e;
 }
 
+.selected-pkg {
+  background: skyblue;
+}
+
 .selected-tab {
   border-bottom: 3px solid #a6271f !important;
 }

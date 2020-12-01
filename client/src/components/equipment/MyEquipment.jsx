@@ -246,7 +246,7 @@ class MyEquipment extends React.Component {
                           onBlur={(event) =>
                             this.handleDescriptionChange(event, index)
                           }
-                          style={{ height: '3rem' }}
+                          style={{ height: '3rem', color: 'black' }}
                         />
                         <input
                           className="text-black rounded-md"
@@ -259,7 +259,11 @@ class MyEquipment extends React.Component {
                           onBlur={(event) =>
                             this.handleQuantityChange(event, index)
                           }
-                          style={{ height: '3rem', width: '5rem' }}
+                          style={{
+                            height: '3rem',
+                            width: '5rem',
+                            color: 'black'
+                          }}
                         />
                         <svg
                           className="delete-button"
