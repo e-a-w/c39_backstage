@@ -27,7 +27,7 @@ const CreateEvent = ({ handleClose, show }) => {
   };
   useEffect(() => {
     getPackages();
-  }, [show, showModal]);
+  }, [showModal]);
 
   const handleSelectPackage = (packageId) => {
     setSelectedPackage(packageId);
@@ -153,7 +153,7 @@ const CreateEvent = ({ handleClose, show }) => {
 
                 </div>
 
-               <EventLink display={showLinkClassName} eventURL={eventURL} />
+               {/* <EventLink display={showLinkClassName} eventURL={eventURL} /> */}
               </div>
             </div>
           </div>
