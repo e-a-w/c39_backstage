@@ -19,6 +19,11 @@
     "tailwindcss": "^2.0.1",
     "use-clipboard-hook": "^1.1.1"
   },
+  "devDependencies": {
+    "prettier": "^2.1.2",
+    "postcss": "^8.1.10",
+    "autoprefixer": "^10.0.4"
+  },
   "scripts": {
     "build": "yarn run build:css && react-scripts build",
     "build:css": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
