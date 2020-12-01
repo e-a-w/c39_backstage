@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Logout from './../Logout';
 import '../../styles/index.css';
+import djIcon from '../../assets/profileIcons/dj-icon.png';
 
 const MainNav = () => {
   return (
@@ -21,7 +22,7 @@ const MainNav = () => {
             <button className="group-hover:bg-gray-dark">
               <img
                 className="profile-icon"
-                src="../profileIcons/dj-icon.png"
+                src={djIcon}
                 alt="dj icon"
                 style={{ height: '100%' }}
               />

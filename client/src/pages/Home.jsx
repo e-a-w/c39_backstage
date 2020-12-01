@@ -1,6 +1,13 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import '../styles/index.css';
+import backstage1 from '../assets/landing-page-images/backstage1.png';
+import landPic2 from '../assets/landing-page-images/land-pic-2.png';
+import jojo from '../assets/landing-page-images/jojo.jpg';
+import landPic4 from '../assets/landing-page-images/land-pic-4.png';
+import landPic3 from '../assets/landing-page-images/land-pic-3.png';
+import greenBackground from '../assets/landing-page-images/green-background.png';
+import whiteBackground from '../assets/landing-page-images/white-background.png';
 
 const Home = () => {
   const history = useHistory();
@@ -8,7 +15,7 @@ const Home = () => {
     <div className="landing-page">
       <div
         className="landing-container-1 bg-no-repeat bg-center"
-        style={{ backgroundImage: "url('landing-page-images/backstage1.png')" }}
+        style={{ backgroundImage: `url('${backstage1}')` }}
       >
         <form
           className="form1"
@@ -55,7 +62,7 @@ const Home = () => {
         <div className="landing-container-image-back">
           <img
             className="landing-pic-back"
-            src="../landing-page-images/land-pic-2.png"
+            src={landPic2}
             alt="backside picture of musicians playing"
           />
         </div>
@@ -64,7 +71,7 @@ const Home = () => {
       <div
         className="landing-container-3 bg-no-repeat bg-center bg-cover"
         style={{
-          backgroundImage: "url('landing-page-images/green-background.png')"
+          backgroundImage: `url('${greenBackground}')`
         }}
       >
         <div className="landing-container-3-info">
@@ -77,7 +84,7 @@ const Home = () => {
         <div className="landing-container-3-image">
           <img
             className="landing-pic-3"
-            src="../landing-page-images/land-pic-3.png"
+            src={landPic3}
             alt="blackandwhite pic of concert with smoke"
           />
         </div>
@@ -94,7 +101,7 @@ const Home = () => {
         <div className="landing-container-image-back">
           <img
             className="landing-pic-back"
-            src="../landing-page-images/land-pic-4.png"
+            src={landPic4}
             alt="artis mirror with lightbulbs"
           />
         </div>
@@ -103,7 +110,7 @@ const Home = () => {
       <div
         className="landing-container-5 bg-no-repeat bg-center"
         style={{
-          backgroundImage: "url('landing-page-images/white-background.png')"
+          backgroundImage: `url('${whiteBackground}')`
         }}
       >
         <div className="landing-container-5-info">
@@ -116,11 +123,7 @@ const Home = () => {
           </p>
         </div>
         <div className="landing-container-5-image">
-          <img
-            className="landing-pic-5"
-            src="../landing-page-images/jojo.jpg"
-            alt="DJ"
-          />
+          <img className="landing-pic-5" src={jojo} alt="DJ" />
         </div>
       </div>
 

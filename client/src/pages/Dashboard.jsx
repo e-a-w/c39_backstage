@@ -8,6 +8,7 @@ import MyEquipment from '../components/equipment/MyEquipment';
 import StageDetails from '../components/stages/StageDetails';
 import AddImage from '../components/AddImage';
 import '../styles/index.css';
+import jennyBlock2 from '../assets/dashboard-images/jennyblock2.png';
 
 class Dashboard extends React.Component {
   state = { show: false, image: null, preview: null, currentTab: 'equip' };
@@ -25,7 +26,7 @@ class Dashboard extends React.Component {
         <div
           className="header-container bg-no-repeat bg-cover bg-center"
           style={{
-            backgroundImage: "url('../dashboard-images/jennyblock2.png')",
+            backgroundImage: `url('${jennyBlock2}')`,
             height: '36vh'
           }}
         >
