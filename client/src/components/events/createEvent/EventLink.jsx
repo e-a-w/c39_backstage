@@ -1,10 +1,11 @@
 import React from 'react';
 import { useClipboard } from 'use-clipboard-hook';
 import swal from 'sweetalert';
+import clipboard from '../../../assets/clipboard.svg';
 import '../../../styles/index.css';
 
 const EventLink = ({ display, eventURL }) => {
-  let showLinkClassName = display ? 'block' : 'hidden';
+  const showLinkClassName = display ? 'block' : 'none';
 
   const { ref, copy } = useClipboard({
     onSuccess: (text) =>
@@ -27,29 +28,14 @@ const EventLink = ({ display, eventURL }) => {
               backgroundColor: '#FFF7F1',
               textAlign: 'center',
               width: '80%',
+              height: "35px",
               overflow: 'scroll',
               marginBottom: '1.5rem',
               justifySelf: 'center',
             }}
           />
-            <svg
-              onClick={copy}
-              className="w-10 h-10 mb-6 cursor-pointer"
-              style={{justifySelf: "center"}}
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              id="clipboard-svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"
-              ></path>
-            </svg>
-          </div>
+          <img style={{cursor: "pointer"}} onClick={copy} src={clipboard} alt="clipboard"/>
+    </div>
   );
 };
 
