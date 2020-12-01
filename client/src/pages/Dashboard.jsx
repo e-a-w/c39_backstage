@@ -42,7 +42,7 @@ class Dashboard extends React.Component {
               }}
             >
                 <Link to="/dashboard/events" onClick={() => this.setState({ currentTab: 'events' })}
-                    className={`h-full font-medium text-3xl hover:text-red text-center ${
+                    className={`h-full text-3xl hover:text-red text-center ${
                       this.state.currentTab === 'events' ? 'selected-tab' : ' '
                     }`}
                     style={{
@@ -54,7 +54,7 @@ class Dashboard extends React.Component {
                     My Events
                 </Link>
                 <Link to="/dashboard/stages" onClick={() => this.setState({ currentTab: 'stages' })}
-                    className={`h-full font-medium text-3xl hover:text-red text-center ${
+                    className={`h-full text-3xl hover:text-red text-center ${
                       this.state.currentTab === 'stages' ? 'selected-tab' : ' '
                     }`}
                     style={{
@@ -67,7 +67,7 @@ class Dashboard extends React.Component {
                 </Link>
                 <Link to="/dashboard/equipment"
                     onClick={() => this.setState({ currentTab: 'equip' })}
-                    className={`h-full font-medium text-3xl text-center ${
+                    className={`h-full text-3xl text-center ${
                       this.state.currentTab === 'equip' ? 'selected-tab' : ' '
                     }`}
                     style={{

@@ -74,10 +74,10 @@ const CreateEvent = ({ handleClose, show }) => {
         <>
           <div
             className="justify-center items-center flex overflow-x-hidden overflow-y-scroll fixed inset-0 z-50 outline-none focus:outline-none"
-            style={{padding: "30px", right: "0"}}
+            style={{position: "fixed", right: "0"}}
           >
-            <div className="relative w-auto my-6 mx-auto max-w-3xl">
-              <div style={{backgroundColor: "white", width: "700px"}} className="border-0 rounded-lg shadow-lg relative flex flex-col outline-none focus:outline-none">
+            <div className="relative w-auto my-6 max-w-3xl">
+              <div style={{backgroundColor: "white", width: "700px", padding: "0px 30px", }} className="border-0 rounded-lg shadow-lg relative flex flex-col outline-none focus:outline-none">
                 {/*header*/}
                 <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t">
                   <h3 className="text-lg leading-6 font-medium text-gray-900">
@@ -159,7 +159,6 @@ const CreateEvent = ({ handleClose, show }) => {
               </div>
             </div>
           </div>
-          <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
         </>
       ) : null}
             </>
