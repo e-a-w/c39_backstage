@@ -77,7 +77,7 @@ const CreateEvent = ({ handleClose, show }) => {
             style={{padding: "50px"}}
           >
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
-              <div style={{backgroundColor: "white"}} className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+              <div style={{backgroundColor: "white", width: "700px"}} className="border-0 rounded-lg shadow-lg relative flex flex-col outline-none focus:outline-none">
                 {/*header*/}
                 <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t">
                   <h3 className="text-lg leading-6 font-medium text-gray-900">
@@ -153,7 +153,7 @@ const CreateEvent = ({ handleClose, show }) => {
 
                 </div>
 
-               {/* <EventLink display={showLinkClassName} eventURL={eventURL} /> */}
+               <EventLink display={showLinkClassName} eventURL={eventURL} />
               </div>
             </div>
           </div>

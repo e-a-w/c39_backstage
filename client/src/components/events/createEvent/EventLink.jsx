@@ -15,9 +15,7 @@ const EventLink = ({ display, eventURL }) => {
   });
 
   return (
-    <div className={showLinkClassName}>
-        <div className="mt-1 relative rounded-md shadow-sm">
-          <div className="absolute inset-y-0 left-0 pl-3 flex items-center "></div>
+    <div className={showLinkClassName} className="flex">
           <input
             readonly
             type="text"
@@ -28,16 +26,16 @@ const EventLink = ({ display, eventURL }) => {
             style={{
               backgroundColor: '#FFF7F1',
               textAlign: 'center',
-              width: '100%',
+              width: '80%',
+              overflow: 'scroll',
               marginBottom: '1.5rem',
               justifySelf: 'center',
-              wordWrap: 'break-word'
             }}
           />
-          <div className="z-99 clipboard-button cursor-pointer absolute inset-y-0 right-0 flex items-center ">
             <svg
               onClick={copy}
-              className="w-10 h-10 mb-6 cursor-pointer "
+              className="w-10 h-10 mb-6 cursor-pointer"
+              style={{justifySelf: "center"}}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -52,8 +50,6 @@ const EventLink = ({ display, eventURL }) => {
               ></path>
             </svg>
           </div>
-        </div>
-    </div>
   );
 };
 
