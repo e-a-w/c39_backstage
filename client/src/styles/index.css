@@ -1,6 +1,5 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 body {
   background-color: #222222;
@@ -455,3 +454,5 @@ label:hover {
   border-radius: 5px;
   padding: 0.5rem;
 }
+
+@tailwind utilities;
