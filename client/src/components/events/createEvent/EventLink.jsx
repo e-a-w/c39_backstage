@@ -17,24 +17,29 @@ const EventLink = ({ display, eventURL }) => {
 
   return (
     <div className={showLinkClassName} className="flex w-full">
-          <input
-            readonly
-            type="text"
-            id="price"
-            className="focus:outline-none text-sm"
-            value={eventURL}
-            ref={ref}
-            style={{
-              backgroundColor: '#FFF7F1',
-              textAlign: 'center',
-              height: "35px",
-              width: "100%",
-              overflow: 'scroll',
-              marginBottom: '1.5rem',
-              justifySelf: 'center',
-            }}
-          />
-          <img style={{cursor: "pointer", height: '30px'}} onClick={copy} src={clipboard} alt="clipboard"/>
+      <input
+        readonly
+        type="text"
+        id="price"
+        className="focus:outline-none text-sm"
+        value={eventURL}
+        ref={ref}
+        style={{
+          backgroundColor: '#FFF7F1',
+          textAlign: 'center',
+          height: '35px',
+          width: '100%',
+          overflow: 'scroll',
+          marginBottom: '1.5rem',
+          justifySelf: 'center'
+        }}
+      />
+      <img
+        style={{ cursor: 'pointer', height: '30px' }}
+        onClick={copy}
+        src={clipboard}
+        alt="clipboard"
+      />
     </div>
   );
 };
