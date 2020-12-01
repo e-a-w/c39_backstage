@@ -54,20 +54,20 @@ const CreateEvent = ({ handleClose, show }) => {
   return (
     <div className={showHideClassName}>
       <div
-        class="entire-modal fixed z-100 inset-0 overflow-y-auto"
+        class="entire-modal  inset-0 overflow-y-auto"
         id="parent-parent-parent"
       >
         <div
-          class="flex z-100 items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+          class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
           id="parent-parent"
         >
           <div
-            class="fixed z-100 inset-0 transition-opacity"
+            class="inset-0 transition-opacity"
             id="background-overlay-parent"
             aria-hidden="true"
           >
             <div
-              class="absolute inset-0 bg-gray-500 z-100 opacity-75"
+              class="absolute inset-0 bg-gray-500  opacity-75"
               id="background-overlay"
             ></div>
           </div>
@@ -80,7 +80,7 @@ const CreateEvent = ({ handleClose, show }) => {
           </span>
 
           <div
-            class="z-100 entire-modal-inner-container inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+            class="entire-modal-inner-container inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
             role="dialog"
             aria-modal="true"
             aria-labelledby="modal-headline"

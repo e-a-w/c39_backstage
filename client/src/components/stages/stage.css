@@ -1,0 +1,86 @@
+.new-stage-name {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.new-stage-container {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.new-stage-area {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+.stage-width {
+  margin-left: 20px;
+}
+.stage-height {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.new-stage-place {
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 5px;
+}
+.new-stage-button {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #a6271f;
+  border-radius: 10px;
+  padding: 15px;
+}
+.new-stage-button-box {
+  display: flex;
+  justify-content: center;
+}
+.new-stage-dimensions {
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+.new-stage-full {
+  display: flex;
+  justify-content: center;
+}
+.comment-box {
+  border-radius: 5px;
+}
+.new-stage-comments {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5px;
+}
+.new-stage-comments-title {
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-radius: 5px;
+}
+.new-stage-dimensions-box {
+  display: flex;
+  justify-content: center;
+
+  border-radius: 5px;
+}
+.stage-name {
+  min-width: 700px;
+  min-height: 50px;
+  text-align: center;
+}
+.drop-stage {
+  color: darkgrey;
+}

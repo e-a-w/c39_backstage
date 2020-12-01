@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 import swal from 'sweetalert';
 import '../../styles/index.css';
+import './stage.css';
 
 const NewStage = () => {
   const [stageData, setStageData] = useState(null);

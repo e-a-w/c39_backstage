@@ -1,5 +1,6 @@
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 
 body {
   background-color: #222222;
@@ -150,7 +151,7 @@ label:hover {
 
 /* *********************STAGE**********************  */
 
-.new-stage-name {
+/* .new-stage-name {
   display: flex;
   justify-content: center;
   color: white;
@@ -235,7 +236,7 @@ label:hover {
 }
 .drop-stage {
   color: darkgrey;
-}
+} */
 
 .stageArea {
   @apply bg-gray m-4;
@@ -454,5 +455,3 @@ label:hover {
   border-radius: 5px;
   padding: 0.5rem;
 }
-
-@tailwind utilities;
