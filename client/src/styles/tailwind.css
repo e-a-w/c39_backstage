@@ -31889,14 +31889,6 @@ label:hover {
   color: rgba(255, 247, 241, var(--tw-text-opacity));
 }
 
-.dash-title-bar {
-  --tw-bg-opacity: 1;
-  background-color: rgba(34, 34, 34, var(--tw-bg-opacity));
-  display: flex;
-  padding: 0.5rem;
-  width: 50%;
-}
-
 .dash-title-bar-buttons {
   --tw-bg-opacity: 1;
   background-color: rgba(34, 34, 34, var(--tw-bg-opacity));
