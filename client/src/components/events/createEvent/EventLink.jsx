@@ -16,14 +16,13 @@ const EventLink = ({ display, eventURL }) => {
 
   return (
     <div className={showLinkClassName}>
-      <div>
         <div className="mt-1 relative rounded-md shadow-sm">
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center "></div>
           <input
             readonly
             type="text"
             id="price"
-            className="focus:outline-none text-xl"
+            className="focus:outline-none text-sm"
             value={eventURL}
             ref={ref}
             style={{
@@ -31,7 +30,8 @@ const EventLink = ({ display, eventURL }) => {
               textAlign: 'center',
               width: '100%',
               marginBottom: '1.5rem',
-              justifySelf: 'center'
+              justifySelf: 'center',
+              wordWrap: 'break-word'
             }}
           />
           <div className="z-99 clipboard-button cursor-pointer absolute inset-y-0 right-0 flex items-center ">
@@ -53,7 +53,6 @@ const EventLink = ({ display, eventURL }) => {
             </svg>
           </div>
         </div>
-      </div>
     </div>
   );
 };

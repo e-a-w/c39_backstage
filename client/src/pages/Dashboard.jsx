@@ -13,13 +13,6 @@ import jennyBlock2 from '../assets/dashboard-images/jennyblock2.png';
 class Dashboard extends React.Component {
   state = { show: false, image: null, preview: null, currentTab: 'equip' };
 
-  showModal = () => {
-    this.setState({ show: true });
-  };
-
-  hideModal = () => {
-    this.setState({ show: false });
-  };
   render() {
     return (
       <div className="w-full">
@@ -34,27 +27,7 @@ class Dashboard extends React.Component {
             <AddImage />
           </div>
 
-          <CreateEvent show={this.state.show} handleClose={this.hideModal} />
-          <button
-            type="button"
-            onClick={this.showModal}
-            style={{
-              position: 'relative',
-              left: '59vw',
-              margin: '0px',
-              top: '27vh',
-              height: '5rem',
-              width: '15.5rem',
-              border: '1px solid white'
-            }}
-            className={
-              !this.state.show
-                ? 'block btn-1 text-2xl red-button'
-                : 'hidden btn-1 text-2xl red-button'
-            }
-          >
-            Create Event
-          </button>
+          <CreateEvent show={this.state.show} />
         </div>
         <BrowserRouter>
           <div className="bg-gray-dark w-full">

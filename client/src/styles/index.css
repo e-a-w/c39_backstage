@@ -310,10 +310,6 @@ label:hover {
   @apply text-white p-2 text-xl;
 }
 
-.dash-title-bar {
-  @apply bg-gray-dark flex p-2 w-1/2;
-}
-
 .dash-title-bar-buttons {
   @apply flex flex-col text-center bg-gray-dark justify-items-center;
 }

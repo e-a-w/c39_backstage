@@ -12,9 +12,9 @@
   border: 1px solid lightgray;
   transition: all 150ms ease-in 0ms;
 }
-.package-select {
+/* .package-select {
   display: flex;
-}
+} */
 .entire-modal-inner-container * {
   margin: 0.25rem;
 }
