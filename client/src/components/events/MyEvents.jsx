@@ -29,7 +29,7 @@ const MyEvents = () => {
     >
       {events?.map((event1) => {
         return (
-          <div class="flex flex-col items-center w-full">
+          <div className="flex flex-col items-center w-full">
             <div
               className="flex p-2 m-4 w-7/12 justify-center my-event-card"
               style={{
@@ -43,12 +43,12 @@ const MyEvents = () => {
               <div className="p-2 m-2 flex flex-col items-center w-full h-56 mb-6 ml-36">
                 <h2 className="dash-h2 text-3xl">{event1?.eventTitle}</h2>
                 <br />
-                <span class="text-2xl">
+                <span className="text-2xl">
                   {moment(event1?.eventDate).format('MMMM Do YYYY')}
                 </span>
                 <br />
                 <span
-                  class="text-2xl semibold"
+                  className="text-2xl semibold"
                   style={
                     event1?.hasBeenOpened
                       ? { color: 'green', fontWeight: '600' }

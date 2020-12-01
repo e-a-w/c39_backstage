@@ -22,7 +22,7 @@ class Dashboard extends React.Component {
   };
   render() {
     return (
-      <div class="w-full">
+      <div className="w-full">
         <div
           className="header-container bg-no-repeat bg-cover bg-center"
           style={{
@@ -47,7 +47,7 @@ class Dashboard extends React.Component {
               width: '15.5rem',
               border: '1px solid white'
             }}
-            class={
+            className={
               !this.state.show
                 ? 'block btn-1 text-2xl red-button'
                 : 'hidden btn-1 text-2xl red-button'
@@ -70,7 +70,7 @@ class Dashboard extends React.Component {
               }}
             >
               <nav
-                class={!this.state.show ? 'flex' : 'hidden'}
+                className={!this.state.show ? 'flex' : 'hidden'}
                 className="flex"
                 style={{
                   width: '100%',
@@ -78,10 +78,10 @@ class Dashboard extends React.Component {
                   marginTop: '.5rem'
                 }}
               >
-                <Link to="/dashboard/events" class="w-1/3 react-link">
+                <Link to="/dashboard/events" className="w-1/3 react-link">
                   <h2
                     onClick={() => this.setState({ currentTab: 'events' })}
-                    class={`h-full font-medium text-3xl hover:text-red text-center flex items-center justify-center ${
+                    className={`h-full font-medium text-3xl hover:text-red text-center flex items-center justify-center ${
                       this.state.currentTab === 'events' ? 'selected-tab' : ' '
                     }`}
                     style={{
@@ -94,10 +94,10 @@ class Dashboard extends React.Component {
                   </h2>
                 </Link>
                 <br />
-                <Link to="/dashboard/stages" class="w-1/3 react-link">
+                <Link to="/dashboard/stages" className="w-1/3 react-link">
                   <h2
                     onClick={() => this.setState({ currentTab: 'stages' })}
-                    class={`h-full font-medium text-3xl hover:text-red text-center flex items-center justify-center ${
+                    className={`h-full font-medium text-3xl hover:text-red text-center flex items-center justify-center ${
                       this.state.currentTab === 'stages' ? 'selected-tab' : ' '
                     }`}
                     style={{
@@ -113,7 +113,7 @@ class Dashboard extends React.Component {
                 <Link to="/dashboard/equipment" className="w-1/3 react-link">
                   <h2
                     onClick={() => this.setState({ currentTab: 'equip' })}
-                    class={`h-full font-medium text-3xl text-center flex items-center justify-center ${
+                    className={`h-full font-medium text-3xl text-center flex items-center justify-center ${
                       this.state.currentTab === 'equip' ? 'selected-tab' : ' '
                     }`}
                     style={{

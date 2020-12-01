@@ -15,15 +15,15 @@ const EventLink = ({ display, eventURL }) => {
   });
 
   return (
-    <div class={showLinkClassName}>
+    <div className={showLinkClassName}>
       <div>
-        <div class="mt-1 relative rounded-md shadow-sm">
-          <div class="absolute inset-y-0 left-0 pl-3 flex items-center "></div>
+        <div className="mt-1 relative rounded-md shadow-sm">
+          <div className="absolute inset-y-0 left-0 pl-3 flex items-center "></div>
           <input
             readonly
             type="text"
             id="price"
-            class="focus:outline-none text-xl"
+            className="focus:outline-none text-xl"
             value={eventURL}
             ref={ref}
             style={{
@@ -34,10 +34,10 @@ const EventLink = ({ display, eventURL }) => {
               justifySelf: 'center'
             }}
           />
-          <div class="z-99 clipboard-button cursor-pointer absolute inset-y-0 right-0 flex items-center ">
+          <div className="z-99 clipboard-button cursor-pointer absolute inset-y-0 right-0 flex items-center ">
             <svg
               onClick={copy}
-              class="w-10 h-10 mb-6 cursor-pointer "
+              className="w-10 h-10 mb-6 cursor-pointer "
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"

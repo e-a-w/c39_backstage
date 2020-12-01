@@ -41,7 +41,7 @@ const MyStages = () => {
   };
 
   return (
-    <div class="flex flex-col items-center">
+    <div className="flex flex-col items-center">
       <div className="dash-title-bar w-full flex justify-center">
         <div className="dash-title-bar-buttons flex justify-center">
           <button
@@ -54,7 +54,7 @@ const MyStages = () => {
         </div>
       </div>
       <div
-        class="w-7/12"
+        className="w-7/12"
         style={{
           display: 'flex',
           flexDirection: 'column',
@@ -79,12 +79,12 @@ const MyStages = () => {
                 <div className="p-2 m-2 flex flex-col w-2/3 h-56 mb-6">
                   <h2 className="text-3xl">{package1?.name}</h2>
                   <br />
-                  <span class="text-2xl">
+                  <span className="text-2xl">
                     {package1?.isOutdoor ? 'Outdoor' : 'Indoor'}
                   </span>
-                  <span class="text-2xl my-4">{`Dimensions: ${package1?.width} x ${package1?.depth} ft.`}</span>
+                  <span className="text-2xl my-4">{`Dimensions: ${package1?.width} x ${package1?.depth} ft.`}</span>
 
-                  <p class="text-xl">
+                  <p className="text-xl">
                     <em>{package1?.comments}</em>
                   </p>
                 </div>

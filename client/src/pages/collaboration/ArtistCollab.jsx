@@ -64,12 +64,15 @@ const ArtistCollab = () => {
     <div className="bg-gray-dark">
       <div className="artist-collab-component text-center">
         <div className="info-header mb-10">
-          <h2 class="font-bold text-4xl pt-8 mb-2" style={{ color: '#FFF7F1' }}>
+          <h2
+            className="font-bold text-4xl pt-8 mb-2"
+            style={{ color: '#FFF7F1' }}
+          >
             {eventData?.eventTitle}
           </h2>
           <em>
             <h3
-              class="text-2xl text-gray-200 dash mt-4"
+              className="text-2xl text-gray-200 dash mt-4"
               style={{ color: '#FFF7F1' }}
             >
               {moment(eventData?.eventDate).format('MMMM Do YYYY')}
@@ -78,11 +81,11 @@ const ArtistCollab = () => {
         </div>
         <div className="artist-collab-container flex flex-col items-center">
           <div
-            class="icons-and-stage flex w-5/6 items-center justify-evenly m-0"
+            className="icons-and-stage flex w-5/6 items-center justify-evenly m-0"
             style={{ margin: '0px' }}
           >
             <div
-              class="flex flex-col items-center w-1/4 justify-between border-l-8 text-lg mx-0"
+              className="flex flex-col items-center w-1/4 justify-between border-l-8 text-lg mx-0"
               style={{
                 height: '36rem',
                 borderTopRightRadius: '0.5rem',
@@ -92,7 +95,7 @@ const ArtistCollab = () => {
                 marginBottom: '.25rem'
               }}
             >
-              <h2 class="text-2xl">Select your equipment</h2>
+              <h2 className="text-2xl">Select your equipment</h2>
               <div
                 className="icon-selection-container flex flex-col items-center w-full my-0"
                 style={{
@@ -102,7 +105,7 @@ const ArtistCollab = () => {
               >
                 <select
                   onChange={handleCategorySelect}
-                  class="text-xl"
+                  className="text-xl"
                   style={{ backgroundColor: '#FFF7F1', outline: 'none' }}
                 >
                   {categoryList.map((category, index) => {
@@ -117,7 +120,7 @@ const ArtistCollab = () => {
                     );
                   })}
                 </select>
-                <div class="flex flex-wrap overflow-auto justify-center">
+                <div className="flex flex-wrap overflow-auto justify-center">
                   {activeCategory.map((object, index) => (
                     <button
                       className="icon-to-select"
@@ -151,7 +154,7 @@ const ArtistCollab = () => {
             style={{ height: '36rem', marginTop: '0px' }}
           >
             <div
-              class="flex flex-col items-center w-full border-l-8 text-lg "
+              className="flex flex-col items-center w-full border-l-8 text-lg "
               style={{
                 borderColor: '#A6271F',
                 width: '62%',
@@ -162,13 +165,13 @@ const ArtistCollab = () => {
                 marginRight: '4px'
               }}
             >
-              <h2 class="text-3xl pt-4 font-medium">Venue's Equipment</h2>
+              <h2 className="text-3xl pt-4 font-medium">Venue's Equipment</h2>
               <div className="venue-equip-container w-full overflow-y-auto ">
                 {equipData?.map((item, index) => {
                   return (
-                    <div class="flex justify-start" key={index}>
+                    <div className="flex justify-start" key={index}>
                       <span
-                        class=" text-xl"
+                        className=" text-xl"
                         style={{
                           display: 'inline-flex',
                           alignItems: 'center',
@@ -179,7 +182,7 @@ const ArtistCollab = () => {
                         {item.name}
                       </span>
                       <span
-                        class="mx-4 text-left text-xl"
+                        className="mx-4 text-left text-xl"
                         style={{
                           display: 'inline-flex',
                           alignItems: 'center',
@@ -189,7 +192,7 @@ const ArtistCollab = () => {
                         {item.description}
                       </span>
                       <span
-                        class=" text-xl"
+                        className=" text-xl"
                         style={{
                           display: 'inline-flex',
                           alignItems: 'center',
@@ -210,10 +213,10 @@ const ArtistCollab = () => {
                 height: '36rem',
                 marginLeft: '4px'
               }}
-              class="flex flex-col"
+              className="flex flex-col"
             >
               <div
-                class="flex flex-col w-full border-l-8 text-lg ml-0"
+                className="flex flex-col w-full border-l-8 text-lg ml-0"
                 style={{
                   borderColor: '#A6271F',
                   borderTopRightRadius: '0.5rem',
@@ -225,14 +228,14 @@ const ArtistCollab = () => {
                   marginRight: '0px'
                 }}
               >
-                <h2 class="text-3xl pt-4 font-medium text-center">
+                <h2 className="text-3xl pt-4 font-medium text-center">
                   Stage Characteristics
                 </h2>
 
                 <div className="stage-characteristics w-full text-xl bold h-full flex flex-wrap justify-start">
-                  <div class="flex flex-col ">
+                  <div className="flex flex-col ">
                     <span
-                      class="rounded-full py-2 px-4"
+                      className="rounded-full py-2 px-4"
                       style={{
                         fontSize: '1.35rem',
                         backgroundColor: '#A6271F',
@@ -243,9 +246,9 @@ const ArtistCollab = () => {
                       {eventData?.selectedPackage.depth} ft.
                     </span>
                   </div>
-                  <div class="flex flex-col text-xl">
+                  <div className="flex flex-col text-xl">
                     <span
-                      class="rounded-full py-2 px-4"
+                      className="rounded-full py-2 px-4"
                       style={{
                         fontSize: '1.35rem',
                         backgroundColor: '#A6271F',
@@ -261,7 +264,7 @@ const ArtistCollab = () => {
                 </div>
               </div>
               <div
-                class="flex flex-col items-center w-full border-l-8 text-lg ml-0"
+                className="flex flex-col items-center w-full border-l-8 text-lg ml-0"
                 style={{
                   borderColor: '#A6271F',
                   borderTopRightRadius: '0.5rem',
@@ -271,14 +274,14 @@ const ArtistCollab = () => {
                   margin: '0px'
                 }}
               >
-                <div class="flex flex-col justify-left w-11/12">
+                <div className="flex flex-col justify-left w-11/12">
                   <p
-                    class="text-center text-3xl font-medium"
+                    className="text-center text-3xl font-medium"
                     style={{ borderBottom: '2px' }}
                   >
                     Venue's Comments
                   </p>
-                  <p class="text-xl text-left">
+                  <p className="text-xl text-left">
                     <em>{eventData?.selectedPackage.comments}</em>
                   </p>
                 </div>

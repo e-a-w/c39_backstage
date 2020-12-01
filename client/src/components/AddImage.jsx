@@ -57,7 +57,7 @@ const AddImage = () => {
               width={250}
               height={250}
               roundedCircle
-              class="the-profile-image"
+              className="the-profile-image"
             />
           </label>
           <button

@@ -136,7 +136,7 @@ class MyEquipment extends React.Component {
 
   render() {
     return (
-      <div class="flex justify-center my-equipment-con">
+      <div className="flex justify-center my-equipment-con">
         <div className="my-equipment-component flex w-5/6 flex justify-center">
           <div
             className="existing-equip-list w-full text-lg text-white"
@@ -147,14 +147,14 @@ class MyEquipment extends React.Component {
               padding: '1rem'
             }}
           >
-            <h2 class="text-2xl semibold text-center text-white pb-6">
+            <h2 className="text-2xl semibold text-center text-white pb-6">
               Your Equipment
             </h2>
             {this.state.existingEquip?.map((item) => {
               return (
-                <div class="flex justify-start ">
+                <div className="flex justify-start ">
                   <span
-                    class="w-3/4 border bg-white pl-2 text-black rounded-md semibold"
+                    className="w-3/4 border bg-white pl-2 text-black rounded-md semibold"
                     style={{
                       display: 'inline-flex',
                       alignItems: 'center',
@@ -165,7 +165,7 @@ class MyEquipment extends React.Component {
                     {item.name}
                   </span>
                   <span
-                    class="w-1/4 border bg-white text-black rounded-md semibold"
+                    className="w-1/4 border bg-white text-black rounded-md semibold"
                     style={{
                       display: 'inline-flex',
                       alignItems: 'center',
@@ -193,10 +193,10 @@ class MyEquipment extends React.Component {
                 maxWidth: '38rem'
               }}
             >
-              <h1 class="text-2xl" style={{ marginBottom: '1.5rem' }}>
+              <h1 className="text-2xl" style={{ marginBottom: '1.5rem' }}>
                 Add Equipment
               </h1>
-              <div class="flex flex-col items-center text-xl">
+              <div className="flex flex-col items-center text-xl">
                 <select
                   className="category-drop-menu text-black"
                   onChange={this.handleCategorySelect}
@@ -206,7 +206,7 @@ class MyEquipment extends React.Component {
                   ))}
                 </select>
               </div>
-              <div class="flex flex-wrap w-full justify-evenly text-xl">
+              <div className="flex flex-wrap w-full justify-evenly text-xl">
                 {this.state.activeCategory.map((item, index) => (
                   <button
                     className="category-options btn-2"
@@ -232,7 +232,7 @@ class MyEquipment extends React.Component {
                     return (
                       <div style={{ display: 'flex', alignItems: 'center' }}>
                         <span
-                          class="text-lg"
+                          className="text-lg"
                           style={{ color: '#FFF7F1', width: '10rem' }}
                         >
                           {item}
@@ -249,7 +249,7 @@ class MyEquipment extends React.Component {
                           style={{ height: '3rem' }}
                         />
                         <input
-                          class="text-black rounded-md"
+                          className="text-black rounded-md"
                           placeholder="quantity"
                           name={item}
                           required
