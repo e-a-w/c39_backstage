@@ -31,7 +31,6 @@ const MyEvents = () => {
         return (
           <div className="saved-event-card-area">
             <div
-
               className="flex p-2 m-4 w-full justify-center saved-event-inner-card-area"
               style={{
                 borderTopRightRadius: '0.5rem',
@@ -43,7 +42,6 @@ const MyEvents = () => {
                 padding: '20px',
                 textAlign: 'center'
               }}
-
             >
               <div className="saved-event-inner-card-text-area">
                 <h2 className="dash-h2">{event1?.eventTitle}</h2>
@@ -52,16 +50,18 @@ const MyEvents = () => {
                   {moment(event1?.eventDate).format('MMMM Do YYYY')}
                 </span>
                 <br />
-                { <span
-                  className="saved-event-has-been-opened-text"
-                  style={
-                    event1?.hasBeenOpened
-                      ? { color: 'green', fontWeight: '600' }
-                      : { color: 'red', fontWeight: '600' }
-                  }
-                >
-                  {event1?.hasBeenOpened ? 'Opened by Artist' : 'Not Opened'}
-                </span> */}
+                {
+                  <span
+                    className="saved-event-has-been-opened-text"
+                    style={
+                      event1?.hasBeenOpened
+                        ? { color: 'green', fontWeight: '600' }
+                        : { color: 'red', fontWeight: '600' }
+                    }
+                  >
+                    {event1?.hasBeenOpened ? 'Opened by Artist' : 'Not Opened'}
+                  </span>
+                }
                 <br />
               </div>
               <div className="saved-event-card-last"></div>
