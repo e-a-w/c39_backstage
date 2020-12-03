@@ -25,7 +25,8 @@
     "mongoose": "^5.10.15",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
-    "stylelint-config-recommended": "^3.0.0",
+    "sweetalert": "^2.1.2",
+    "use-clipboard-hook": "^1.1.1",
     "validator": "^13.1.17"
   },
   "devDependencies": {
@@ -34,12 +35,14 @@
     "prettier": "^2.1.2"
   },
   "scripts": {
+    "build:css": "cd client && yarn run build:css",
+    "prestart": "yarn run build:css",
+    "prebuild": "yarn run build:css",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "cd client && yarn run start",
     "dev": "concurrently --kill-others-on-fail \"yarn run server\" \"yarn run client\"",
     "heroku-postbuild": "cd client && yarn && yarn run build",
-    "prettify": "prettier '*/**/*.js' '*/**/*.jsx' '*/**/*.html' '*/**/*.css' --write",
-    "build:css": "cd client && yarn run build:css"
+    "prettify": "prettier '*/**/*.js' '*/**/*.jsx' '*/**/*.html' '*/**/*.css' --write"
   }
 }

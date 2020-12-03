@@ -60,9 +60,9 @@ class Stage extends React.Component {
   render() {
     const dragHandlers = { onStart: this.onStart, onStop: this.onStop };
     return (
-      <div className="w-3/4 relative">
+      <div className="w-3/4 ">
         <div
-          className="the-stage w-full  rounded-md  flex flex-wrap items-start"
+          className="the-stage w-full relative rounded-md  flex flex-wrap items-start"
           id="theStage"
           style={{
             height: '36.25rem',

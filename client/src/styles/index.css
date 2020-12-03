@@ -183,8 +183,18 @@ label:hover {
   color: white;
   border-radius: 5px;
   margin: 2px;
+  margin-top: 10px;
   padding: 5px;
 }
+
+.outdoor-checkbox-label {
+  @apply text-xl;
+}
+
+.outdoor-checkbox-input {
+  @apply text-xl;
+}
+
 .new-stage-button {
   display: flex;
   justify-content: center;
@@ -226,7 +236,6 @@ label:hover {
 .new-stage-dimensions-box {
   display: flex;
   justify-content: center;
-
   border-radius: 5px;
 }
 .stage-name {
@@ -254,8 +263,41 @@ label:hover {
   @apply flex p-2 m-4 w-1/2 justify-center ml-80;
 }
 
+.saved-stage-out {
+  @apply w-7/12 flex flex-col items-center;
+}
+
+.saved-stage-event-card {
+  @apply flex p-2 m-6 w-full justify-center mb-1 rounded;
+}
+
+.saved-stage-inside-card {
+  @apply flex justify-between;
+}
+
+.saved-stage-inside-card-real {
+  @apply p-2 m-2 flex flex-col w-2/3 h-56 mb-6 bg-white rounded;
+}
+
+.saved-stage-inside-card-text-info {
+  @apply text-3xl text-black;
+}
+
+/* 
 .saved-stage-info {
   @apply p-2 m-2 flex flex-col w-2/3;
+} */
+
+.saved-stage-card-text-outdoor {
+  @apply text-2xl;
+}
+
+.saved-stage-card-dimensions {
+  @apply text-2xl my-4;
+}
+
+.saved-stage-card-text-comments {
+  @apply text-xl;
 }
 
 .saved-stage-btn-area {
@@ -264,7 +306,7 @@ label:hover {
 
 /* *******************EVENT******************* */
 
-.saved-event {
+/* .saved-event {
   @apply bg-gray-light text-gray-dark flex p-2 m-4 w-1/2 justify-center;
 }
 
@@ -274,6 +316,34 @@ label:hover {
 
 .saved-event-btn-area {
   @apply text-center justify-center bg-gray-light m-3 p-2 w-1/3;
+} */
+
+.saved-event-area {
+  @apply bg-gray-dark flex flex-col items-center mt-16;
+}
+
+.saved-event-card-area {
+  @apply flex flex-col items-center w-full;
+}
+
+.saved-event-inner-card-area {
+  @apply flex p-2 m-4 w-7/12 justify-center bg-white rounded mb-1;
+}
+
+.saved-event-inner-card-text-area {
+  @apply p-2 m-2 flex flex-col items-center w-full h-56 mb-6 ml-36;
+}
+
+.saved-event-card-custom-date {
+  @apply text-2xl;
+}
+
+/* .saved-event-has-been-opened-text {
+  @apply text-2xl;
+} */
+
+.saved-event-card-last {
+  @apply text-center justify-center m-3 p-2 w-1/3;
 }
 
 /* *******************DASH-NAV******************* */
@@ -371,6 +441,9 @@ label:hover {
 .red-button:hover {
   background-color: #b9544e;
 }
+.selected-pkg {
+  background: skyblue;
+}
 
 .selected-pkg {
   background: skyblue;
@@ -384,18 +457,105 @@ label:hover {
   border-bottom: 3px solid white !important;
 }
 .my-equipment-component {
-  @apply flex w-full;
+  @apply flex w-5/6 flex justify-center;
 }
+
 .existing-equip-list {
-  @apply ml-16 w-1/3 text-lg text-gray-dark;
+  @apply w-full text-lg text-white ml-16 p-1 mt-8;
 }
 
-.delete-button:hover {
-  cursor: pointer;
+/* ml-16 w-1/3 text-lg text-gray-dark;
+  p-1 mt-2.5rem   */
+
+/* borderRight: '5px solid #FFF7F1',
+              marginTop: '2.5rem',
+              borderRadius: '10px',
+              padding: '1rem'
+} */
+
+/* .delete-button {
+  @apply cursor-pointer;
+} */
+
+.my-equipment-con {
+  @apply flex justify-center p-2 m-2;
 }
 
-.my-equipment-con * {
-  margin: 0.5rem;
+.equipment-items {
+  @apply flex justify-start text-black;
+}
+
+.your-equipment-title {
+  @apply text-2xl text-center text-white pb-6;
+}
+
+.your-equipment-item-box {
+  @apply inline-flex justify-center text-left w-3/4 border-white bg-white pl-2 text-black rounded-md text-2xl;
+}
+
+/* style={{
+  display: 'inline-flex',
+  alignItems: 'center',
+  textAlign: 'left',
+  height: '3rem'
+}} */
+
+.your-equipment-quantity-box {
+  @apply inline-flex justify-center w-1/4 h-12 border-white bg-white text-black rounded-md text-2xl;
+}
+
+/* style={{
+  display: 'inline-flex',
+  alignItems: 'center',
+  justifyContent: 'center'
+}} */
+
+/* .equipment-form-container {
+  @apply 
+} */
+
+.add-equipment-area {
+  @apply flex flex-col items-center mt-8 p-4;
+}
+
+.add-equipment-title {
+  @apply mb-6 text-2xl text-white;
+}
+
+.equipment-category-dropdown {
+  @apply flex flex-col items-center text-xl;
+}
+
+.category-drop-menu {
+  @apply text-black;
+}
+
+.equipment-category-btn-area {
+  @apply flex flex-wrap w-full justify-evenly text-xl;
+}
+
+.button-mapping-area {
+  @apply flex justify-center min-w-min max-w-lg;
+}
+
+/* .button-mapping {
+  @apply min-w-min max-w-xl;
+} */
+
+.equipment-align-items {
+  @apply flex items-start;
+}
+
+.equipment-text-special {
+  @apply text-lg text-white w-40;
+}
+
+.equipment-description-box {
+  @apply w-20vw h-12 text-black rounded-md;
+}
+
+.equipment-quantity-box {
+  @apply text-black rounded-md h-12 w-20;
 }
 
 .the-profile-image:hover {

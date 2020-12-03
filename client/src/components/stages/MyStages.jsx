@@ -56,18 +56,11 @@ const MyStages = () => {
           Add A New Stage
         </button>
       </div>
-      <div
-        className="w-7/12"
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center'
-        }}
-      >
+      <div className="saved-stage-out flex flex-col items-center">
         {packages.map((package1) => {
           return (
             <div
-              className="flex p-2 m-6 w-full justify-center my-event-card"
+              className="flex p-2 m-6 w-full justify-center saved-stage-event-card"
               style={{
                 borderTopRightRadius: '0.5rem',
                 borderBottomRightRadius: '0.5rem',
@@ -81,16 +74,18 @@ const MyStages = () => {
             >
               <br />
 
-              <div className="flex justify-between">
-                <div className="p-2 m-2 flex flex-col w-2/3 h-56 mb-6">
-                  <h2 className="text-3xl">{package1?.name}</h2>
+              <div className="saved-stage-inside-card">
+                <div className="saved-stage-inside-card-real">
+                  <h2 className="saved-stage-inside-card-text-info">
+                    {package1?.name}
+                  </h2>
                   <br />
-                  <span className="text-2xl">
+                  <span className="saved-stage-card-text-outdoor">
                     {package1?.isOutdoor ? 'Outdoor' : 'Indoor'}
                   </span>
-                  <span className="text-2xl my-4">{`Dimensions: ${package1?.width} x ${package1?.depth} ft.`}</span>
+                  <span className="saved-stage-card-dimensions">{`Dimensions: ${package1?.width} x ${package1?.depth} ft.`}</span>
 
-                  <p className="text-xl">
+                  <p className="saved-stage-card-text-comments">
                     <em>{package1?.comments}</em>
                   </p>
                 </div>

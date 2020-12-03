@@ -26,6 +26,8 @@
     "prebuild": "yarn run build:css",
     "build": "react-scripts build",
     "build:css": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
+    "prestart": "yarn run build:css",
+    "prebuild": "yarn run build:css",
     "start": "yarn run build:css && react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
